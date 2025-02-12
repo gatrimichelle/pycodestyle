@@ -1,0 +1,45 @@
+# Function 1: Counts word occurrences in a sentence
+def count_word_occurrences(sentence):
+    word_count = {}
+    for word in sentence.split():
+        word_count[word] = word_count.get(word, 0) + 1
+    return word_count
+
+  
+  
+  
+  
+# Function 2: Filters a list to return even numbers
+def getEvenNumbers(lstOfNumbers):   return        [number for number in lstOfNumbers if number % 2 == 0]
+
+
+# Function 3: Merges two dictionaries with overlapping keys
+def merge_dicts(dict1, dict2):
+  merged = {**dict1, **dict2}
+  for key in dict1.keys() & dict2.keys():
+    merged[key] = dict1[key] + dict2[key]
+    return merged
+
+  
+  
+  
+  
+  
+  
+# Function 4: Sorts a list of tuples by the second element
+def sort_tuples_by_second_element(list_of_tuples):
+    return sorted(list_of_tuples, key=lambda x: x[1])
+
+  
+  
+  
+  
+  
+  
+# Function 5: Finds the longest word in a list of strings
+def longest_word(words):
+    longest = ""
+    for word in words:
+        if len(word) > len(longest):
+            longest = word
+    return longest
